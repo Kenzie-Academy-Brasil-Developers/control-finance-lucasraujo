@@ -30,6 +30,12 @@
   --font-weight-3: 400;
 
   --font-line-height-1: 150%;
+  --font-line-height-2: 1.5rem;
+  --font-line-height-3: 1.06rem;
+  --font-line-height-4: 1.18rem;
+  --font-line-height-5: 1.3125rem;
+  
+
 
   --radius-1: 0.5rem;
   --radius-2: 0.25rem;
@@ -39,20 +45,26 @@
 
   --font-family-1: "Inter", sans-serif;
   --font-family-2: "Nunito", sans-serif;
+
+  --width-1: 43rem;
+  --spacing-1:3rem;
+
 }
 
 body {
   font-family: var(--font-family-1);
+  color: var(--color-grey-1);
 }
 
 .container {
+  
   max-width: 43rem;
-  margin: 0 auto;
+
 }
 
 @media (max-width: 700px) {
   .container {
     max-width: 43rem;
-    margin: 0 1rem;
+    
   }
 }

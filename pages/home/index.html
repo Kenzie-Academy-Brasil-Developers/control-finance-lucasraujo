@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,126 @@
     <title>Control Finance</title>
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <meta name="description" content="Control Finance - Seu controle financeiro">
+    <link rel="stylesheet" href="/styles/reset.css">
+
+    <link rel="stylesheet" href="/styles/modal.css">
+    <link rel="stylesheet" href="/styles/divDefalt.css">
+    <link rel="stylesheet" href="/styles/card.css">
+    <link rel="stylesheet" href="/styles/containers.css">
+    <link rel="stylesheet" href="/styles/button.css">
+    <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/globalStyles.css">
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <main id="app"></main>
+
+    <!-- <section class="outsideModal">
+
+        <div class="bodyModal">
+            <div class="modalContent">
+                <div class="titleAndX">
+                    <h2 class="titleModal">Registro De Valor</h2>
+                    <button class="xModal">X</button>
+
+                </div>
+                <p class="modalText">
+                    Digite o valor e em seguida aperte no botão referente ao tipo do valor
+                </p>
+                <form action="" class="formModal">
+                    <label for="valueOfInput" class="labelInputValue">Valor</label>
+                    <div class="fakePlaceholder">
+                        <label for="valueOfInput">R$
+                            <input name="valueOfInput" id="valueOfInput" placeholder="00.00"
+                                class="valueOfInput inputValueOfInput" type="text"
+                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                        </label>
+                    </div>
+                    <div class="divTypeValue">
+                        <span class="textTypeOfValue">Tipo de valor</span>
+
+                        <input type="radio" hidden id="0" value="Entrada" name="valueType" class="radio0">
+                        <label class=" inputEntryModal labelradiosModal" tabindex="0" for="0">Entrada</label>
+
+                        <input type="radio" hidden id="1" value="Saida" name="valueType" class="radio1">
+                        <label class="inputExitModal labelradiosModal" tabindex="1" for="1">Saida</label>
+
+                    </div>
+
+                    <div class="divbuttonsModal">
+                        <button class="buttonSegundary cancel">Cancelar</button>
+                        <button class="buttonPrimary insertValue">Inserir Valor</button>
+                    </div>
+
+                </form>
+                
+
+            </div>
+
+
+        </div>
+
+    </section> -->
+
+
+    <main id="app">
+        <header>
+            <div class="tittleButton container pattern-1">
+                <h1><span class="spamText">Control</span> Finance</h1>
+                <button class="buttonPrimary register">Registrar novo valor </button>
+            </div>
+        </header>
+        <section class="summaryAndButton  pattern-1 container">
+            <h2>Resumo financeiro</h2>
+            <div>
+                <button class="buttonOutline all">Todos</button>
+                <button class="buttonOutline entry">Entradas</button>
+                <button class="buttonOutline exit">Saidas</button>
+            </div>
+        </section>
+        <section class="sum pattern-1 container">
+            <h3>Soma dos valores</h3>
+            <span class="resultSum">R$ 0,00</span>
+        </section>
+        <section class="cards pattern-1 container ">
+
+
+
+
+
+
+
+            <!--       div default 
+
+                 <div class="divDefault ">
+                <h4 class="titleDefault">Nenhum valor cadastrado</h4>
+                <p class="textDefault">Registrar novo valor</p>
+            </div> -->
+
+
+
+
+                 
+                
+                <!-- <div class="card">
+                <span class="ValueCard">R$ 40,00</span>
+                <div class="corner">
+                    <span class="status">entrada</span>
+                    <button class="trash"></button>
+                </div> 
+            </div> -->
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
     <script src="/scripts/modal.js"></script>
     <script src="valuesData.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>

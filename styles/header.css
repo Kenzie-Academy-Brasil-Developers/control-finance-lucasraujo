@@ -1,0 +1,43 @@
+header { 
+    background-color: var(--color-grey-5);
+    height: 6.5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.tittleButton{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--width-1);
+}
+
+h1{
+    color: var(--color-grey-1);
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-1); 
+    font-size: var(--font-size-1);
+    line-height: var(--font-line-height-2);
+}
+
+.spamText{
+    color: var(--color-brand-1);
+}
+
+@media(max-width:400px){
+    .tittleButton{
+        flex-direction: column ;
+        align-items: flex-start;
+        
+    }
+    .register{
+        width: 100vw;
+    }
+    .container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+}
